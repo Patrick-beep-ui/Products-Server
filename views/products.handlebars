@@ -1,0 +1,25 @@
+<table>
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Stock</th>
+        <th>Category</th>
+        <th>Color</th>
+    </tr>
+    </thead>
+    {{#each products}}
+    <tr>
+    <td>{{this.id}}</td>
+    <td>{{this.name}}</td>
+    <td>${{this.price}}</td>
+    <td>{{this.stock}}</td>
+    <td>{{this.category}}</td>
+    <td>{{this.color}}</td>
+    {{/each}}
+</table>
+
+<div>
+    <a href="/filter">Go to Filters Page</a>
+</div>

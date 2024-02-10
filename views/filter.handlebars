@@ -1,0 +1,54 @@
+<h1>Filters</h1>
+
+<form action="products/name" method="GET">
+<label for="name">Enter name</label>
+    <input type="text" id="name" name="name">
+    <input type="submit" value="Filter by Name">
+</form>
+
+<form action="products/id" method="GET">
+    <label for="id">Provide Id</label>
+    <input type="number" name="id" id="id">
+    <input type="submit" value="Filter by Id">
+</form>
+
+<form action="products/category" method="GET">
+<select name="category" id="category">
+    <option value="Sofa">Sofa</option>
+    <option value="Chair">Chair</option>
+    <option value="Living">Living</option>
+</select>
+<input type="submit" value="Filter by Category">
+</form>
+
+<form action="/products/price" method="GET">
+    <label for="min">Min Price:</label>
+    <input type="number" id="min" name="min" placeholder="Enter minimum price">
+
+    <label for="max">Max Price:</label>
+    <input type="number" id="max" name="max" placeholder="Enter maximum price">
+
+    <input type="submit" value="Filter by Price Range">
+</form>
+
+<form action="/products/color" method="GET">
+<label for="name">Enter Color</label>
+    <input type="text" id="color" name="color">
+    <input type="submit" value="Filter by Color">
+</form>
+
+<section class="crud-btns">
+    <div>
+        <a href="/add">Add a Product</a>
+    </div>
+    <div>
+        <a href="/delete">Delete a Product</a>
+    </div>
+    <div>
+        <a href="/edit">Edit a Product</a>
+    </div>
+
+    <div>
+        <a href="/products">Show all products</a>
+    </div>
+</section>
